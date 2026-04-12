@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/sort"
+        android:title="Trier par note"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sort_asc"
+                android:title="Note croissante" />
+            <item
+                android:id="@+id/sort_desc"
+                android:title="Note décroissante" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/share"
+        android:title="Partager"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="never" />
+</menu>
